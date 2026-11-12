@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JK EduVision</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f3f6fc;
+ color:#172b4d;
+}
+header{
+ background:#102b50;
+ color:white;
+ padding:25px 18px;
+ text-align:center;
+}
+header h1{margin:0;color:#ffd447}
+header p{margin:8px 0 0}
+.welcome{padding:22px 16px}
+.welcome h2{margin-bottom:5px}
+.section{padding:10px 16px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:12px;
+}
+.card{
+ background:white;
+ padding:20px 10px;
+ border-radius:14px;
+ text-align:center;
+ box-shadow:0 2px 9px #0001;
+ cursor:pointer;
+ border:1px solid #e5eaf2;
+}
+.card span{font-size:28px}
+.card h3{margin:10px 0 0;font-size:16px}
+.subjects{display:grid;gap:10px}
+.subject{
+ background:white;
+ padding:15px;
+ border-radius:12px;
+ border-left:5px solid #e8b923;
+}
+button{
+ background:#102b50;
+ color:white;
+ border:0;
+ padding:12px 18px;
+ border-radius:9px;
+ font-size:15px;
+ cursor:pointer;
+}
+footer{
+ background:#102b50;
+ color:white;
+ text-align:center;
+ padding:20px;
+ margin-top:25px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>JK EduVision</h1>
+<p>Your Success, Our Mission.</p>
+<p>Learn • Grow • Succeed</p>
+</header>
+
+<div class="welcome">
+<h2>Welcome, Students! 👋</h2>
+<p>Your online learning destination for Classes 9th to 12th.</p>
+</div>
+
+<div class="section">
+<h2>📚 Select Your Class</h2>
+<div class="grid">
+<div class="card" onclick="chooseClass('9th')">
+<span>🎓</span><h3>Class 9th</h3>
+</div>
+<div class="card" onclick="chooseClass('10th')">
+<span>🎓</span><h3>Class 10th</h3>
+</div>
+<div class="card" onclick="chooseClass('11th')">
+<span>🎓</span><h3>Class 11th</h3>
+</div>
+<div class="card" onclick="chooseClass('12th')">
+<span>🎓</span><h3>Class 12th</h3>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>📖 Our Subjects</h2>
+<div class="subjects">
+<div class="subject">⚛️ Physics</div>
+<div class="subject">🧪 Chemistry</div>
+<div class="subject">🧬 Biology</div>
+<div class="subject">📐 Mathematics</div>
+</div>
+</div>
+
+<div class="section" style="text-align:center">
+<h2>🚀 Start Learning Today!</h2>
+<p>Study smart and achieve your dreams.</p>
+<button onclick="alert('Welcome to JK EduVision!')">
+Start Learning
+</button>
+</div>
+
+<footer>
+<h3>JK EduVision</h3>
+<p>Your Success, Our Mission.</p>
+<p>© 2026 JK EduVision</p>
+</footer>
+
+<script>
+function chooseClass(name){
+ alert("You selected Class "+name+
+ ". Lessons will be added soon!");
+}
+</script>
+
+</body>
+</html>
